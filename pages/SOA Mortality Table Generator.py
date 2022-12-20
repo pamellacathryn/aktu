@@ -12,7 +12,7 @@ with st.sidebar:
     st.header("About")
     st.info("This web app is made by Pamella Cathryn. You can follow me on [LinkedIn](https://linkedin.com/in/pamellacathryn) | [Instagram](https://instagram.com/pamellacathryn) | [GitHub](https://github.com/pamellacathryn)")
 
-list_code = pd.read_csv("../Actuary_Project/assets/List_Code.csv")["Kode"].tolist()
+list_code = pd.read_csv("assets/List_Code.csv")["Kode"].tolist()
 
 st.markdown(f"<h1 style='text-align: center; '>SOA Mortality Table</h1>",
                 unsafe_allow_html=True)
