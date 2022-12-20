@@ -1,0 +1,17 @@
+a {
+    text-decoration: none;
+    color: #FAFAFA !important;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #84BEEE !important;
+    text-decoration: none;
+}
+
+ul {list-style-type: none;}
+
+hr {
+    margin-top: 50%;
+    margin-bottom: 5%;
+}
