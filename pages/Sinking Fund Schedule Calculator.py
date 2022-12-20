@@ -95,7 +95,7 @@ if letsgo:
     col1, col2, col3 = st.columns(3)
     col1.metric("Sinking Fund Deposit", f"{round(depo, 2)}", f"{round(100*depo/loan,2)}% of Loan", delta_color="inverse")
     col2.metric("Total Deposit Paid", f"{round(sum,2)}", f"{round(100*sum/loan,2)}% of Loan", delta_color="inverse")
-    col3.metric("Total Money Saved", f"{round(loan-sum,2)}", f"{round((loan-sum)/loan-1,2)}% of Loan", delta_color="inverse")
+    col3.metric("Total Money Saved", f"{round(loan-sum,2)}", f"{round(abs(loan-sum)/loan-1,2)}% of Loan")
     t = [i for i in range(len(period))]
     st.markdown(
         """<style>
