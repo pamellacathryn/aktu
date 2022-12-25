@@ -37,7 +37,7 @@ with col1:
     st.image(profile_pic, width=230)
 with col2:
     st.markdown("<h1 style='text-align: justify;'>Hi There!👋🏼</h1>", unsafe_allow_html=True)
-    words = "I am Pam, an aspiring actuarial analyst currently studying Actuarial Science at Bandung Institute of Technology. In this Web App, I have collected all my personal projects from my college and internship experiences, and I hope you will find them useful. If you would like to contact me with any feedback or requests, please do not hesitate to contact me via the links below. Thank you!💖"
+    words = "I am Pam, an aspiring actuarial analyst currently studying Actuarial Science at Bandung Institute of Technology. In this Web App, I have collected all my personal projects from my college and internship experiences, and I hope you find them useful. Please do not hesitate to contact me with any feedback or requests using the links below. Thank you!💖"
     st.markdown(f'<div style="text-align: justify;">{words}</div>', unsafe_allow_html=True)
     # st.write(DESCRIPTION)
     # st.write("📍 Bandung, Indonesia")
