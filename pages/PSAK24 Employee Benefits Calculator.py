@@ -108,7 +108,7 @@ if letsgo:
     NKKIP = unit * MK_lalu
     koloms2.metric(f"NKKIP/PVDBO Usia {sekarang}", f"{rupiah(NKKIP)}")
 
-    st.subheader("Ilustrasi")
+    st.subheader("Illustration")
     x_an = [i for i in range(masuk, pensiun+1)]
     data = [0 for i in range(len(x_an))]
     label = ["" for i in range(len(x_an))]
