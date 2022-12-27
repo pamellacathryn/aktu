@@ -191,10 +191,20 @@ kolom2.metric("Total Claims",round(npv(claims, T, i),2))
 if margin > 0:
     kolom3.metric("Total Insurance Float",round(npv(net_cashflow, T, i),2), f"Margin = {round(100 * margin, 2)}% of Premium")
 else:
-    kolom3.metric("Total Insurance Float", round(npv(net_cashflow, T, i), 2), f"Margin = {round(100 * margin, 2)}% of Premium", delta=-1, delta_color="inverse")
+    kolom3.metric("Total Insurance Float", round(npv(net_cashflow, T, i), 2), f"Margin = {round(100 * margin, 2)}% of Premium", delta_color="inverse")
 st.write("---")
 
 st.markdown(f'<h2 style="text-align: justify;">Conclusion</h2>', unsafe_allow_html=True)
+st.write(
+    """
+    <style>
+    [data-testid="stMetricDelta"] svg {
+        display: none;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
 if margin > 0:
     if margin < 0.1 :
         words = f"So in this case (ignoring expenses), we would expect the policy to be profitable, as the value of premiums received is expected to outweigh the value of claims paid. The margin ({round(100 * margin, 2)}%) is however fairly low, so introducing expenses are likely to make the policy unprofitable."
