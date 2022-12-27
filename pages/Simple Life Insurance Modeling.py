@@ -125,7 +125,7 @@ grid_table = AgGrid(df1,
                     allow_unsafe_jscode=True,
                     editable=True)
 df1 = grid_table['data']
-st.markdown(f'<div style="text-align: justify;">Note: you can change the values, just give reasonable numbers</div>', unsafe_allow_html=True)
+st.warning('Note: you can change the values, just give reasonable numbers', icon="💡")
 st.write("")
 
 st.markdown(f'<h5 style="text-align: justify;">2. The expenses are ignored</h4>', unsafe_allow_html=True)
