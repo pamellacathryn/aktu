@@ -92,7 +92,10 @@ else:
     startq = 0.001
     t = 1
     while t != T+1 :
-        a = np.random.rand()
+        if startq < 1:    
+            a = np.random.rand()
+        else:
+            a = 0
         q.append(startq)
         w.append(round(np.random.rand()/10,3))
         if a >= 0.35:
