@@ -84,6 +84,7 @@ if letsgo:
         sum+=int_paid[i]
         sum2+=payment[i]
     OLB = [round(i,2) for i in OLB]
+    OLB[-1] = abs(OLB[-1])
     col1, col2, col3 = st.columns(3)
     col1.metric("Level Payment", f"{round(R, 2)}", f"{round(100*R/loan,2)}% of Loan", delta_color="inverse")
     col2.metric("Total Interest Paid", f"{round(sum,2)}")
