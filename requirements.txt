@@ -16,6 +16,14 @@ scipy==1.7.3
 seaborn==0.11.2
 statsmodels==0.13.2
 streamlit-aggrid==0.3.3
+streamlit-camera-input-live==0.2.0
+streamlit-card==0.0.4
+streamlit-embedcode==0.1.2
+streamlit-extras==0.2.4
+streamlit-faker==0.0.2
+streamlit-keyup==0.2.0
 streamlit-option-menu==0.3.2
+streamlit-toggle-switch==1.0.2
+streamlit-vertical-slider==1.0.2
 streamlit==1.16.0
 yfinance==0.1.86
