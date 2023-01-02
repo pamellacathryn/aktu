@@ -1,8 +1,8 @@
 import streamlit as st
 from pathlib import Path
 from PIL import Image
+from streamlit_extras.let_it_rain import rain
 
-# --- SIDE BAR
 
 # --- PATH SETTINGS ---
 current_dir = Path(__file__).parent if '__file__' in locals() else Path.cwd()
@@ -25,7 +25,12 @@ SOCIAL_MEDIA = {
 }
 
 st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
-
+rain(
+    emoji="❄️",
+    font_size=10,
+    falling_speed=10,
+    animation_length="infinite",
+)
 # --- LOAD CSS, PDF & PROFILE PIC ---
 with open(css_file) as f:
     st.markdown("<style>{}</style>".format(f.read()),unsafe_allow_html=True)
