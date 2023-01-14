@@ -71,7 +71,7 @@ if letsgo:
                 .col_heading   {text-align: center !important}
             </style>
             """, unsafe_allow_html=True)
-    pokok = np.abs(pokok)
+
 
     if P - C > 0:
         text_1 = "sold at premium"
@@ -86,7 +86,7 @@ if letsgo:
         st.metric("Total Interest Earned", f"{round(np.sum(imbai), 2)}")
     with kol4:
         st.metric("Total Principal Paid", f"{round(np.sum(pokok), 2)}")
-
+    pokok = np.abs(pokok)
     st.markdown(f"<h3 style='text-align: center; '>Amortization Schedule</h3>",
                 unsafe_allow_html=True)
     df = pd.DataFrame(list(zip(t, kupon, imbai, pokok, buku)),
