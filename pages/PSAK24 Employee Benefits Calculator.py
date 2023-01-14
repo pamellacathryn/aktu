@@ -95,6 +95,7 @@ elif based == "Custom UP & UPMK":
 elif based == "Imbalan Tetap":
     imbalan = st.number_input("Masukkan besar imbalan tetap", min_value=0, max_value=None, value=1000)
 
+st.write("")
 letsgo = st.button("Calculate")
 
 if letsgo:
