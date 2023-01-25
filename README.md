@@ -1,4 +1,4 @@
 ## Actuarial Projects
 by Pamella Cathryn
 
-[You can reach the application here.](bit.ly/PamAktu)
+[You can reach the application here.](https://pamellacathryn-aktu-main-41zqri.streamlit.app/)
